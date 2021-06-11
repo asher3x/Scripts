@@ -119,10 +119,13 @@ experimental:
 #rules:
 #  - 'MATCH,DIRECT'
 
-# Clash for Windows
-# Proxies module latency test settings
-cfw-latency-timeout: 3000
-cfw-latency-url: http://www.gstatic.com/generate_204
+proxies:
+  # Trojan
+  - name: "trojan"
+    type: trojan
+    server: birword.tk
+    port: 443
+    password: 31b4dc63-c4ff-434e-b82a-2bdd38396b54
 
 # 混合配置（mixin）
 # 支持向所有配置文件中注入公共属性设置
